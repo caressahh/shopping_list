@@ -7,8 +7,10 @@
     <li *ngFor="let wine of shoppingList">
       name: {{wine.name}}
       price: {{wine.price}}
-
     </li>
-  </ul>
 
+  </ul>
+  name: <input [(ngModel)] = "newWine.name">
+  price: <input [(ngModel)] = "newWine.price">
+  <button (click)="addItem()">addAnItem</button>
 </div>
