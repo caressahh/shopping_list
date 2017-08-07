@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Shopping List';
+  shoppingList = [
+  {name: "white wine", price: 1.39},
+  {name: "red wine", price: 12.39},
+  {name: "blue wine", price: 6.39}
+  ]
 }
