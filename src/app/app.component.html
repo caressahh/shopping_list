@@ -7,10 +7,13 @@
     <li *ngFor="let wine of shoppingList">
       name: {{wine.name}}
       price: {{wine.price}}
+      amount: <input type = "number" [(ngModel)] = "wine.amount" (change)="calculateTotal()">
     </li>
-
   </ul>
+
   name: <input [(ngModel)] = "newWine.name">
-  price: <input [(ngModel)] = "newWine.price">
+  price: <input type = "number" [(ngModel)] = "newWine.price">
+  amount: <input type = "number" [(ngModel)] = "newWine.amount">
   <button (click)="addItem()">addAnItem</button>
+  total: {{totalPrice}}
 </div>
